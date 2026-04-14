@@ -138,9 +138,15 @@ options just above ATM.
 Tech stack
 
 Python 3.11
+
 yfinance   — live SPY options chain
+
 scipy      — Brent's method for IV inversion, L-BFGS-B for SVI fitting
+
 numpy      — numerical grids and finite differences for Dupire
+
 pandas     — liquidity filtering pipeline
+
 matplotlib — static 3D surface and per-expiry smile charts
+
 plotly     — interactive 3D surface exported as standalone HTML
