@@ -119,13 +119,19 @@ put wing naturally produces higher local vol there.
 
 What the SVI parameters mean
 The SVI model at each expiry fits five numbers:
+
 w(k) = a + b * [ rho*(k - m) + sqrt((k - m)^2 + sigma^2) ]
+
 where k is log-moneyness and w = IV^2 * T is total implied variance.
 
 a - Overall variance level - 0.001 to 0.010
+
 b - Wing steepness (scaled to T) - b_scale * 1-5
+
 rho - Skew direction — negative = puts more expensive - -0.85 to -0.99
+
 m - Location of variance minimum - -0.02 to +0.05
+
 sigma - Curvature — higher = more pronounced smile - 0.05 to 0.15
 
 
